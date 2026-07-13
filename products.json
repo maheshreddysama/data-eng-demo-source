@@ -1,0 +1,37 @@
+[
+  {
+    "product_id": "P001",
+    "name": "Pro Laptop 15",
+    "category": "Electronics",
+    "price": 1200.00,
+    "supplier": "TechCorp"
+  },
+  {
+    "product_id": "P002",
+    "name": "Wireless Mouse",
+    "category": "Electronics",
+    "price": 25.50,
+    "supplier": "LogiAccessories"
+  },
+  {
+    "product_id": "P003",
+    "name": "Ergonomic Desk Chair",
+    "category": "Furniture",
+    "price": 180.00,
+    "supplier": "ComfortSpaces"
+  },
+  {
+    "product_id": "P004",
+    "name": "4K Monitor 27 Inch",
+    "category": "Electronics",
+    "price": 350.00,
+    "supplier": "ViewMax"
+  },
+  {
+    "product_id": "P005",
+    "name": "Standing Desk",
+    "category": "Furniture",
+    "price": 450.00,
+    "supplier": "ComfortSpaces"
+  }
+]
