@@ -1,8 +1,8 @@
-```## **Data Engineering Pipeline: GCS Ingestion & Dimensional Modeling**
+## **Data Engineering Pipeline: GCS Ingestion & Dimensional Modeling**
 
 A production-ready data engineering pipeline that ingests heterogeneous raw data sources (CSV, JSON, and Pipe-Delimited TXT) into an immutable Google Cloud Storage (GCS) Data Lakehouse landing zone (Bronze Layer) using Hive-style partitioning, preparing it for downstream dimensional modeling into a Star Schema.```
 
-**🏗️ Architecture Overview**
+## **🏗️ Architecture Overview**
 
 1. **Data Source Layer (Local/Extracted):** - `customers.csv`: Structured relational metadata.
    - `products.json`: Semi-structured document records.
@@ -11,16 +11,7 @@ A production-ready data engineering pipeline that ingests heterogeneous raw data
 3. **Storage Layer (GCS Raw Landing Zone):** Organizes incoming datasets dynamically using automated idempotent runtime execution folders structured as: `gs://<bucket_name>/<dataset>/dt=YYYY-MM-DD/file`.
 4. **Analytical Layer (Dimensional Model Target):** Decomposes flat transaction files and normalized dimension tables into a robust analytical **Star Schema** utilizing deterministic hashing (`MD5`/`SHA-2`) for resilient, idempotent surrogate key generation.
 
----
- 📂 Project Structure
-
-
-```
-
-```text
-README.md generated successfully.
-
-```text
+## ** 📂 Project Structure**
 data-eng-demo-source/
 │
 ├── extracted/                  # Local landing directory for raw source data
@@ -31,10 +22,6 @@ data-eng-demo-source/
 ├── load_to_gcs.py              # Main Python ETL pipeline orchestrating GCS uploads
 ├── README.md                   # Project documentation and deployment blueprint
 └── key.json                    # Google Service Account IAM Credentials (⚠️ GIT IGNORED)
-
-```
-
----
 
 ## 🛠️ Step-by-Step Implementation Guide
 
@@ -60,10 +47,6 @@ data-eng-demo-source/
 * Grant the service account the **Storage Object Admin** role.
 * Navigate to the **Keys** tab, click **Add Key > Create New Key > JSON**.
 * Save the downloaded file into your local project workspace as `key.json`.
-
-
-
----
 
 ### Phase 2: Local Environment Setup
 
