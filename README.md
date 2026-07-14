@@ -119,21 +119,14 @@ Once data lands safely inside the GCS storage layer, it is prepared for ingestio
 """
 
 # Write the contents out to a physical file
-
+```
 with open("README.md", "w", encoding="utf-8") as f:
 f.write(readme_content.strip())
 
 print("README.md generated successfully.")
-
 ```
-Your Markdown file is ready
-[file-tag: code-generated-file-0-1783989798386048190]
 
-I have generated a clean, comprehensive, and professional **`README.md`** file tailored perfectly to your project directory, files, and architecture. It describes your layout, configuration fixes (like the organization policy for service account keys), execution steps, and the final Star Schema modeling strategy.
 
-You can copy and paste the markdown text below straight into your local workspace file:
-
-```markdown
 # Data Engineering Pipeline: GCS Ingestion & Dimensional Modeling
 
 A production-ready data engineering pipeline that ingests heterogeneous raw data sources (CSV, JSON, and Pipe-Delimited TXT) into an immutable Google Cloud Storage (GCS) Data Lakehouse landing zone (Bronze Layer) using Hive-style partitioning, preparing it for downstream dimensional modeling into a Star Schema.
@@ -152,7 +145,7 @@ A production-ready data engineering pipeline that ingests heterogeneous raw data
 
 ## 📂 Project Structure
 
-```text
+```
 data-eng-demo-source/
 │
 ├── extracted/                  # Local landing directory for raw source data
