@@ -12,7 +12,7 @@ A production-ready data engineering pipeline that ingests heterogeneous raw data
 4. **Analytical Layer (Dimensional Model Target):** Decomposes flat transaction files and normalized dimension tables into a robust analytical **Star Schema** utilizing deterministic hashing (`MD5`/`SHA-2`) for resilient, idempotent surrogate key generation.
 
 ## ** 📂 Project Structure**
-
+```
 data-eng-demo-source/
 │
 ├── extracted/                  # Local landing directory for raw source data
@@ -23,7 +23,7 @@ data-eng-demo-source/
 ├── load_to_gcs.py              # Main Python ETL pipeline orchestrating GCS uploads
 ├── README.md                   # Project documentation and deployment blueprint
 └── key.json                    # Google Service Account IAM Credentials (⚠️ GIT IGNORED)
-
+```
 ## 🛠️ Step-by-Step Implementation Guide
 
 ### Phase 1: Google Cloud Platform Setup
