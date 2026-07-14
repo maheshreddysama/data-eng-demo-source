@@ -2,7 +2,7 @@
 
 A production-ready data engineering pipeline that ingests heterogeneous raw data sources (CSV, JSON, and Pipe-Delimited TXT) into an immutable Google Cloud Storage (GCS) Data Lakehouse landing zone (Bronze Layer) using Hive-style partitioning, preparing it for downstream dimensional modeling into a Star Schema.```
 
-## 🏗️ Architecture Overview
+**🏗️ Architecture Overview**
 
 1. **Data Source Layer (Local/Extracted):** - `customers.csv`: Structured relational metadata.
    - `products.json`: Semi-structured document records.
@@ -12,8 +12,7 @@ A production-ready data engineering pipeline that ingests heterogeneous raw data
 4. **Analytical Layer (Dimensional Model Target):** Decomposes flat transaction files and normalized dimension tables into a robust analytical **Star Schema** utilizing deterministic hashing (`MD5`/`SHA-2`) for resilient, idempotent surrogate key generation.
 
 ---
-
-## 📂 Project Structure
+ 📂 Project Structure
 
 
 ```
