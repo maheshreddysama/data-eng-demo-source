@@ -1,7 +1,6 @@
-```python
-"""# Data Engineering Pipeline: GCS Ingestion & Dimensional Modeling
+```## **Data Engineering Pipeline: GCS Ingestion & Dimensional Modeling**
 
-A production-ready data engineering pipeline that ingests heterogeneous raw data sources (CSV, JSON, and Pipe-Delimited TXT) into an immutable Google Cloud Storage (GCS) Data Lakehouse landing zone (Bronze Layer) using Hive-style partitioning, preparing it for downstream dimensional modeling into a Star Schema.
+A production-ready data engineering pipeline that ingests heterogeneous raw data sources (CSV, JSON, and Pipe-Delimited TXT) into an immutable Google Cloud Storage (GCS) Data Lakehouse landing zone (Bronze Layer) using Hive-style partitioning, preparing it for downstream dimensional modeling into a Star Schema.```
 
 ## 🏗️ Architecture Overview
 
